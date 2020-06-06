@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PRO STATIONERY</title>
+      
+        <link rel="stylesheet" href="contact.css">
+      
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+      
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+      
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+      </head>
+<body>
+
+
+     <!-- navbar here -->
+
+  <div class="navbar navbar-expand-md bg-warning navbar-light fixed-top">
+    <div class="container">
+      <a href="" class="navbar-brand text-primary font-weight-bold"><span class="example">PRO STATIONERY<span></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsenavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse text-center" id="collapsenavbar">
+        <ul class="navbar-nav  ml-auto">
+          <li class="nav-item ">
+            <a class="nav-link font-weight-bold" href="index.html">HOME </a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link font-weight-bold " href="stationery.html">STATIONERY</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link font-weight-bold" href="school.html">SCHOOL SUPPLIES</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link font-weight-bold" href="office.html">OFFICE SUPPLIES</a>
+          </li>
+
+          <li class="nav-item ">
+            <a class="nav-link font-weight-bold " href="arts.html">ARTS & CRAFTS</a>
+          </li>
+
+          <li class="nav-item active">
+            <a class="nav-link font-weight-bold text-primary" href="contact.html">CONTACT</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+  
+<!-- form -->
+
+
+<div class="container">
+    <div><h1>Contact Us</h1></div>
+    <br />
+    <div class="row">
+        <div class="col-md-6">
+            <div id="googlemap" style="width:100%; height:350px;"></div>
+        </div>
+        <br />
+        <div class="col-md-6">
+            <form class="my-form">
+                <div class="form-group">
+                    <label for="form-name">Name</label>
+                    <input type="email" class="form-control" id="form-name" placeholder="Name">
+                </div>
+                <div class="form-group">
+                    <label for="form-email">Email Address</label>
+                    <input type="email" class="form-control" id="form-email" placeholder="Email Address">
+                </div>
+                <div class="form-group">
+                    <label for="form-subject">Telephone</label>
+                    <input type="text" class="form-control" id="form-subject" placeholder="Subject">
+                </div>
+                <div class="form-group">
+                    <label for="form-message">Email your Message</label>
+                    <textarea class="form-control" id="form-message" placeholder="Message"></textarea>
+                </div>
+                <button class="btn btn-warning" type="submit">Contact Us</button>                
+            </form>
+        </div>
+    </div>
+</div>
+
+<style>
+    .my-form {
+        color: #305896;
+    }
+    .my-form .btn-default {
+        background-color: #305896;
+        color: #fff;
+        border-radius: 0;
+    }
+    .my-form .btn-default:hover {
+        background-color: #4498C6;
+        color: #fff;
+    }
+    .my-form .form-control {
+        border-radius: 0;
+    }
+</style>
+
+<script src="https://maps.googleapis.com/maps/api/js"></script>
+<script type="text/javascript">
+    jQuery(function ($) {
+        // Google Maps setup
+        var googlemap = new google.maps.Map(
+            document.getElementById('googlemap'),
+            {
+                center: new google.maps.LatLng(44.5403, -78.5463),
+                zoom: 8,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            }
+        );
+    });
+</script>
+
+
+
+
+
+  <!-- footer -->
+
+<br>
+<footer class="footer ">
+  <div class="footer-left col-md-4 col-sm-6">
+    <p class="about">
+      <span> About the company</span> We believe in the best quality and customer services.
+    </p>
+    <div class="icons">
+      <a href="#"><i class="fa fa-facebook"></i></a>
+      <a href="#"><i class="fa fa-twitter"></i></a>
+      <a href="#"><i class="fa fa-linkedin"></i></a>
+      <a href="#"><i class="fa fa-google-plus"></i></a>
+      <a href="#"><i class="fa fa-instagram"></i></a>
+    </div>
+  </div>
+  <div class="footer-center col-md-4 col-sm-6">
+    <div>
+      <i class="fa fa-map-marker"></i>
+      <p><span> Shop No 53 Block 19 Gulistan e johar</span> Karachi, Pakistan</p>
+    </div>
+    <div>
+      <i class="fa fa-phone"></i>
+      <p> +92 3012426702</p>
+    </div>
+    <div>
+      <i class="fa fa-envelope"></i>
+      <p><a href="#"> prostationery@gmail.com</a></p>
+    </div>
+  </div>
+  <div class="footer-right col-md-4 col-sm-6">
+    <h2> PRO<span> STATIONERY</span></h2>
+    <p class="menu">
+      <a href="#"> HOME</a> |
+      <a href="#"> STATIONERY</a> |
+      <a href="#"> SCHOOL SUPPLIES</a> |
+      <a href="#"> OFFICE SUPPLIES</a> |
+      <a href="#"> ARTS & CRAFTS</a> |
+      <a href="#"> CONTACT</a>
+    </p>
+    <p class="name"> PRO STATIONERY &copy; 2020</p>
+  </div>
+</footer>
+
+    
+
+
+
+</body>
+</html>
